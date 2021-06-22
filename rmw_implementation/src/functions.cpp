@@ -347,6 +347,10 @@ RMW_INTERFACE_FN(rmw_subscription_count_matched_publishers,
   rmw_ret_t, RMW_RET_ERROR,
   2, ARG_TYPES(const rmw_subscription_t *, size_t *))
 
+RMW_INTERFACE_FN(rmw_subscription_count_unread,
+  rmw_ret_t, RMW_RET_ERROR,
+  2, ARG_TYPES(const rmw_subscription_t *, size_t *))
+
 RMW_INTERFACE_FN(rmw_take,
   rmw_ret_t, RMW_RET_ERROR,
   4, ARG_TYPES(const rmw_subscription_t *, void *, bool *, rmw_subscription_allocation_t *))
