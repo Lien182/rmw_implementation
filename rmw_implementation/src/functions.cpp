@@ -401,6 +401,10 @@ RMW_INTERFACE_FN(rmw_destroy_service,
   rmw_ret_t, RMW_RET_ERROR,
   2, ARG_TYPES(rmw_node_t *, rmw_service_t *))
 
+RMW_INTERFACE_FN(rmw_service_count_unread_requests,
+  rmw_ret_t, RMW_RET_ERROR,
+  2, ARG_TYPES(const rmw_service_t *, size_t *))
+
 RMW_INTERFACE_FN(rmw_take_request,
   rmw_ret_t, RMW_RET_ERROR,
   4, ARG_TYPES(const rmw_service_t *, rmw_request_id_t *, void *, bool *))
